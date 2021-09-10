@@ -1,0 +1,137 @@
+<html>
+  <head>
+    <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;
+      </span>
+      You have been hacked :(
+    </div>
+    <div class="popup" onclick="popup()">click to get unhacked :)
+      <span class="popuptext" id="myPopup">you thought :'(
+      </span>
+    </div>
+  </head>
+  <script>
+    alert('error' + '\n' + 'error' + '\n' + 'error' + '\n' +'error' + '\n' +'error' + '\n' +'error' + '\n' +'error' + '\n');
+    function popup() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+
+
+
+  </script>
+  <style>
+
+@keyframes backcolor {
+    0% {
+        background-color: #cb0fff
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #6600ff
+    }
+
+    90% {
+        background-color: #fdff00
+    }
+
+    100% {
+        background-color: #38ff12
+    }
+}
+
+body {
+    -webkit-animation: backcolor 1s infinite;
+    animation: backcolor 1s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+    .alert {
+      padding: 20px;
+      background-color: #f44336;
+      /* Red */
+      color: white;
+      margin-bottom: 15px;
+    }
+    /* The close button */
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    /* When moving the mouse over the close button */
+    .closebtn:hover {
+      color: black;
+    }
+    /* Popup container */
+    .popup {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+    /* The actual popup (appears on top) */
+    .popup .popuptext {
+      visibility: hidden;
+      width: 160px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -80px;
+    }
+    /* Popup arrow */
+    .popup .popuptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+    }
+    /* Toggle this class when clicking on the popup container (hide and show the popup) */
+    .popup .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s
+    }
+    @-webkit-keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity:1 ;
+      }
+    }
+
+  </style>
+
+
+
+
+
+
+</html>
